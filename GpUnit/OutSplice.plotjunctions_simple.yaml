@@ -1,0 +1,16 @@
+#
+# Example run of CopyNumberInferencePipeline, as run on the gpprod server, 
+# circa the public release of v1.
+# ant -f ${GPUNIT_HOME}/build.xml -Dgpunit.diffStripTrailingCR="--strip-trailing-cr" -Dgp.host="gp-beta-ami.genepattern.org" -Dgp.url="https://gp-beta-ami.genepattern.org" -Dgp.user="ted" -Dgp.password="" -Dgpunit.testfolder=`pwd` gpunit
+# It took about 2 hrs 10 min to run.
+# Suggest running with 4GB
+#
+name: testHISAT2.aligner_single_GPFTP_zip
+module: Outsplice.plotJunctions
+params: 
+    "junction.file": data/HNSC_genes_normalized_2023-03-01.RDa 
+    "number": 5
+    "tail": "RIGHT"
+    "out.file.prefix": 'foo'
+assertions:
+    jobStatus: success 
