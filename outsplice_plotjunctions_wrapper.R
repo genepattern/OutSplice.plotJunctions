@@ -43,7 +43,7 @@ arguments <- commandArgs(trailingOnly=TRUE)
 option_list <- list(
   # Note: it's not necessary for the names to match here, it's just a convention
   # to keep things consistent.
-  make_option("--junction.file", dest="junction.file"),
+  make_option("--data.file", dest="data.file"),
   make_option("--number", dest="number"),
   make_option("--junctions", dest="junctions"),
   make_option("--tail", dest="tail", default=NULL),
@@ -59,7 +59,7 @@ option_list <- list(
 # to give a record as with sessionInfo.
 opt <- parse_args(OptionParser(option_list=option_list), positional_arguments=FALSE, args=arguments)
 opts <- opt
-data_file = opts$junction.file
+data_file = opts$data.file
 
 outdir = getwd()
 
