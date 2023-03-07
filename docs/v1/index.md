@@ -48,7 +48,7 @@ the nature of splicing outliers.
 - **gene**
     - Pick junctions based on a specific gene. TRUE means you will pick all the junctions mapping to a certain gene. FALSE means you do not pick based on the gene. Default is False.
 - **symbol**
-    - 	HGNC SYMBOL of gene you want to graph. 
+    - 	HGNC symbol of gene you want to graph. 
 - **normal color**
     - Color for normals on graph. Default is blue 
 - **tumor color**
