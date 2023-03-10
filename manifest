@@ -8,7 +8,7 @@ commandLine=Rscript /build/source/outsplice_plotjunctions_wrapper.R <data.file> 
 cpuType=any
 description=Using the result file from OutSplice, OutSplice.plotJunctions creates bar and waterfall plots of junction expression in both the tumor and normal samples.
 
-documentationUrl=https\://github.com/genepattern/OutSplice.plotJunctions
+documentationUrl=https://genepattern.github.io/OutSplice.plotJunctions/v1/
 fileFormat=
 job.cpuCount=
 job.docker.image=genepattern/outsplice.plotjunctions\:0.3.1
