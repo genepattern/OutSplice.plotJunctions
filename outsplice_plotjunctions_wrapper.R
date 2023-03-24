@@ -70,7 +70,13 @@ if (!(endsWith(outdir, '/'))){
 pdf <- paste0( opts$out.file.prefix, "", '.pdf')
 pdf_output <- paste0('./', pdf)
 print(data_file)
-PlotJunctionData(data_file, NUMBER=opts$number, junctions=opts$junctions, tail=opts$tail, p_value = opts$p.value, GENE=opts$gene, SYMBOL=opts$symbol, makepdf=TRUE, pdffile = pdf_output, tumcol='red', normcol='blue')
+if (opts$tail == "NULL"){
+    tail = NULL
+} else {
+    tail=opts$tail
+}
+print(paste("tail is ", tail))
+PlotJunctionData(data_file, NUMBER=opts$number, junctions=opts$junctions, tail=tail, p_value = opts$p.value, GENE=opts$gene, SYMBOL=opts$symbol, makepdf=TRUE, pdffile = pdf_output, tumcol='red', normcol='blue')
 
 
 

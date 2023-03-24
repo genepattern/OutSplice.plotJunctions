@@ -11,7 +11,7 @@ description=Using the result file from OutSplice, OutSplice.plotJunctions create
 documentationUrl=https://genepattern.github.io/OutSplice.plotJunctions/v1/
 fileFormat=
 job.cpuCount=
-job.docker.image=genepattern/outsplice.plotjunctions\:0.3.1
+job.docker.image=genepattern/outsplice.plotjunctions\:0.4
 job.memory=
 job.walltime=
 language=any
@@ -59,7 +59,7 @@ p2_value=
 p3_MODE=
 p3_TYPE=TEXT
 p3_default_value=
-p3_description=The specific junction you want to graph (or comma delimited list of junctions). Default is NULL [OPTIONAL]
+p3_description=The specific junction you want to graph (or comma delimited list of junctions). 
 p3_fileFormat=
 p3_flag=--junctions 
 p3_name=junctions
@@ -71,8 +71,8 @@ p3_type=java.lang.String
 p3_value=
 p4_MODE=
 p4_TYPE=TEXT
-p4_default_value=RIGHT
-p4_description=Specify if you want top over or under expressed with tail\='RIGHT' for junctions overexpressed in tumors, or tail\='LEFT' for junctions underexpressed in tumors.  Default is NULL [OPTIONAL]
+p4_default_value= 
+p4_description=Specify if you want top over or under expressed with tail\='RIGHT' for junctions overexpressed in tumors, or tail\='LEFT' for junctions underexpressed in tumors.  Default is both.
 p4_fileFormat=
 p4_flag=--tail  
 p4_name=tail
@@ -81,7 +81,7 @@ p4_optional=on
 p4_prefix=--tail  
 p4_prefix_when_specified=--tail  
 p4_type=java.lang.String
-p4_value=RIGHT\=RIGHT;LEFT\=LEFT
+p4_value=NULL\= ;RIGHT\=RIGHT;LEFT\=LEFT
 p5_MODE=
 p5_TYPE=TEXT
 p5_default_value=<data.file_basename>_plot
