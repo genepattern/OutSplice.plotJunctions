@@ -72,7 +72,7 @@ p3_value=
 p4_MODE=
 p4_TYPE=TEXT
 p4_default_value= 
-p4_description=Specify if you want top over or under expressed with tail\='RIGHT' for junctions overexpressed in tumors, or tail\='LEFT' for junctions underexpressed in tumors.  Default is both.
+p4_description=Specify if you want top over or under expressed with tail\='RIGHT' for junctions overexpressed in tumors, or tail\='LEFT' for junctions underexpressed in tumors. If neither is specified, OutSplice will plot the first N number of junctions specified in the number command, regardless of significance or expression level. Default is neither.
 p4_fileFormat=
 p4_flag=--tail  
 p4_name=tail
