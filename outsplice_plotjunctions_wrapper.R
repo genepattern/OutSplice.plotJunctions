@@ -76,7 +76,7 @@ if (opts$tail == "NULL"){
     tail=opts$tail
 }
 print(paste("tail is ", tail))
-PlotJunctionData(data_file, NUMBER=opts$number, junctions=opts$junctions, tail=tail, p_value = opts$p.value, GENE=opts$gene, SYMBOL=opts$symbol, makepdf=TRUE, pdffile = pdf_output, tumcol='red', normcol='blue')
+plotJunctionData(data_file, NUMBER=opts$number, junctions=opts$junctions, tail=tail, p_value = opts$p.value, GENE=opts$gene, SYMBOL=opts$symbol, makepdf=TRUE, pdffile = pdf_output, tumcol='red', normcol='blue')
 
 
 
