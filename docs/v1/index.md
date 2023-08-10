@@ -38,9 +38,9 @@ the nature of splicing outliers.
 - **number**<span style="color: red;">*</span>
     - The number of junctions to plot. This can be top number of junctions (over or under expressed), or can be specific junctions in a list. Default is 1
 - **junctions**
-    - The specific junction you want to graph (or comma delimited list of junctions). Default is NULL [OPTIONAL]
+    - The specific junction you want to graph (or comma delimited list of junctions). [OPTIONAL]
 - **tail**
-    - 	Specify if you want top over or under expressed with tail='RIGHT' for junctions overexpressed in tumors, or tail='LEFT' for junctions underexpressed in tumors. 
+    - 	Specify if you want top over or under expressed with tail='RIGHT' for junctions overexpressed in tumors, or tail='LEFT' for junctions underexpressed in tumors. If neither is specified, OutSplice will plot the first N number of junctions specified in the **number** command, regardless of significance or expression level. Default is neither.
 - **out file prefix**<span style="color: red;">*</span>
     - user defined string for what the prefix of the output file should be named.
 - **p value**
