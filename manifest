@@ -3,7 +3,7 @@
 JVMLevel=
 LSID=urn\:lsid\:genepattern.org\:module.analysis\:00433\:999999999
 author=Joseph Bendik;UCSD
-categories=beta
+categories=alternative splicing
 commandLine=Rscript /build/source/outsplice_plotjunctions_wrapper.R <data.file>  <junctions>       <out.file.prefix>  <gene> <symbol> <tumor.color> <normal.color>  <p.value>   <tail>    <number>
 cpuType=any
 description=Using the result file from OutSplice, OutSplice.plotJunctions creates bar and waterfall plots of junction expression in both the tumor and normal samples.
